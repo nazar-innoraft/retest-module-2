@@ -4,8 +4,10 @@ require_once 'Database.php';
 
 session_start();
 
+// If load call happens.
 if ($_POST['action'] == 'load') {
-  $str = $_POST['catagory'];
+
+  // Getting catagpries.
   $words = $_POST['catagory'];
   $count = count($words);
   $sql = '';
@@ -23,6 +25,8 @@ if ($_POST['action'] == 'load') {
       }
     }
   }
+
+  // Creating ojject of Databse.
   $db = new Database;
   $db->query($sql);
   $res = '';
@@ -40,4 +44,14 @@ if ($_POST['action'] == 'load') {
     }
   }
   echo $res;
+}
+
+if ($_POST['action'] == 'cart') {
+
+  // Creating ojject of Databse.
+  $db = new Database;
+  // Getting products.
+  $words = $_POST['products'];
+  $mail = new Mailer;
+  $mail->sendEmail('shuva.mallick@innoraft.com', );
 }

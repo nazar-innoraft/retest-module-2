@@ -36,7 +36,9 @@
         </tbody>
       </table>
     </div>
+    <button id="cart">Proceed to cart</button>
   </div>
+
 
   <script src="js/ajax.js"></script>
 </body>
