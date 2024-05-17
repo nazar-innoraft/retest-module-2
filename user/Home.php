@@ -11,8 +11,8 @@
 </head>
 
 <body>
-
   <div class="rappper">
+    <h2>Hello, <?= $_SESSION['email'] ?></h2> <a href="/logout">Logout</a>
     <div id="selectcat">
       <form id="form-select" method="post">
         <input type="checkbox" class="checkbox" name="catagory" id="healthy" value="healthy"> healthy

@@ -7,10 +7,12 @@
 .rappper {
   margin: auto;
   background-color: aliceblue;
+  width: 700px;
+  padding: 20px;
 
   #selectcat {
     margin: 10px auto;
-    width: 400px;
+    width: 100%;
     padding: 20px;
 
     div {

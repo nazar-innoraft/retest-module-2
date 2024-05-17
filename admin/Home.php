@@ -1,6 +1,6 @@
+<?php
 
 $message = '';
-
 
 if (isset($_POST['submit'])) {
   $name = input('name');
@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-  <div class="container">userGroupHandle
+  <div class="container">
     <h2>Hello, <?= $_SESSION['email'] ?></h2> <a href="/logout">Logout</a>
 
     <form action="" method="post">

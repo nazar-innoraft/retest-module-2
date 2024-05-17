@@ -15,9 +15,9 @@ if ($_POST['action'] == 'load') {
   } else {
     foreach ($words as $word) {
       if (strtoupper($word) == 'UNHEALTHY'){
-        $sql = "SELECT * FROM products WHERE catagory = UNHEALTHY";
+        $sql = "SELECT * FROM products WHERE catagory = 'UNHEALTHY'";
       } elseif (strtoupper($word) == 'HEALTHY') {
-        $sql = "SELECT * FROM products WHERE catagory = HEALTHY";
+        $sql = "SELECT * FROM products WHERE catagory = 'HEALTHY'";
       } else {
         continue;
       }
